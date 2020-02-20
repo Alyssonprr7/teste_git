@@ -18,3 +18,9 @@ https://devhints.io/git-log
 Criar um arquivo chamdo .gitignore e colocar o nome do arquivo que quer ignorar dentro dele
 
 Você não deve dar um commit quando o código ainda não está funcionando 
+
+git remote add <nome> <endereço> => Chama o servidor
+git clone <endereço> <nome da pasta> => clonar para algum lugar 
+git push <nome do servidor> <ramo> => Empurrar algo para o servidor 
+git pull <nome do repositorio> <ramo> => Puxar algo para o local 
+
