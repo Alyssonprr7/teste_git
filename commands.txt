@@ -13,6 +13,7 @@ git commit -m "<mensagem>" => Salva dando o commit
 git log => Mostra informações padrões 
 git log --oneline => Mosta informações resumidas 
 git log -p => Informações detalhadas dos commits, o que foi adicionado ou removido
+git log --graph => tem uma parada grafica sobre as brancehes
 https://devhints.io/git-log
 
 Criar um arquivo chamdo .gitignore e colocar o nome do arquivo que quer ignorar dentro dele
@@ -31,7 +32,37 @@ git remote add origin <nome do repositorio no gitHub> => Criar um servidor remot
 git push origin <branch> => Pegar tudo que tem na master e jogar no origin 
 
 
+
+
 BRANCHES 
 git branch => lista as branches
 git branch <nome> => cria um novo branch
+git checkout -b <nome da branch> => Cria uma nova branch tambem 
 git checkout <nome> => Para mudar de branch
+git merge <nome> => Quando eu estou numa ramificação e quero puxar as alterações de outra
+git rebase <nome> => Você junta também, mas agora não cria um commit em merge
+
+
+
+VOLTANDO ATRÁS 
+git checkout --<arquivo> => Desfazer algo que ainda não demos o add, vai sumir do codigo
+git reset HEAD <file> => Desfazer algo que eu já tenha dado add, vai desfazer o add, mas ainda estará no código
+git reverse <HESH do Commit> => Desfazer o commit que já foi feito
+
+git stash => É o uma forma de guardar temporariariamente uma alteração, é um add que não muda de fato
+git stash list => Lista de coisas que estão nesse stash 
+git stash apply <numero do stash> => Aplico o stash que estava salvo antes, mas não apaga da lista de stash 
+git stash drop <numero do stash> => Deleta o stash da lista 
+git stash pop => Pega a ultima coisa que foi salva na stash e coloca no código, já pega direto, ou seja, exclui do stash 
+
+git checkout <HESH do commit> => Volto no tempo para o momento do commit, mas as alterações vão para um lugar alternativo
+ -Caso eu queira salvar, eu devo criar uma nova Branch
+
+
+
+GERANDO ENTREGAS 
+git diff <HESH do commit 1>..<HESH do Commit 2> => Consigo ver a diferença no codigo entre dois commits 
+git diff => Consigo ver tudo que foi adicionado no código mas ainda não foi commitado 
+
+git tag -a <nome da tag> -m <mensagem> => Cria uma tag 
+git tag => Lista as tags 
