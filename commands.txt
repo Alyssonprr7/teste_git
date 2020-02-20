@@ -19,8 +19,19 @@ Criar um arquivo chamdo .gitignore e colocar o nome do arquivo que quer ignorar 
 
 Você não deve dar um commit quando o código ainda não está funcionando 
 
+
+SERVIDOR REMOTO 
+git remote => Lista os servidores remotos 
 git remote add <nome> <endereço> => Chama o servidor
 git clone <endereço> <nome da pasta> => clonar para algum lugar 
 git push <nome do servidor> <ramo> => Empurrar algo para o servidor 
 git pull <nome do repositorio> <ramo> => Puxar algo para o local 
 
+git remote add origin <nome do repositorio no gitHub> => Criar um servidor remoto chamado origin 
+git push origin <branch> => Pegar tudo que tem na master e jogar no origin 
+
+
+BRANCHES 
+git branch => lista as branches
+git branch <nome> => cria um novo branch
+git checkout <nome> => Para mudar de branch
