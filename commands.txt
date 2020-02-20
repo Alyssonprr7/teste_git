@@ -1,0 +1,20 @@
+git init => Para iniciar um repositorio 
+
+git status = > Verificar io status 
+
+git add <arquivo>  => adicionar arquivo no repositario mas não salvou ainda 
+git add . => adiciona todos os arquivos da pasta 
+
+git config --local user.email "seu@email.com" => Configura nome e email para projeto e caso seja --global, para toda a maquina
+git config --local user.name "SEU Nome"
+
+git commit -m "<mensagem>" => Salva dando o commit 
+
+git log => Mostra informações padrões 
+git log --oneline => Mosta informações resumidas 
+git log -p => Informações detalhadas dos commits, o que foi adicionado ou removido
+https://devhints.io/git-log
+
+Criar um arquivo chamdo .gitignore e colocar o nome do arquivo que quer ignorar dentro dele
+
+Você não deve dar um commit quando o código ainda não está funcionando 
